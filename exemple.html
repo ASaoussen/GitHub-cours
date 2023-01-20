@@ -6,7 +6,7 @@
 </head>
 <body>
    <h1>COURS GITHUb</h1>
-   <h2>Version 1</h2>
+   <h2>Version 2</h2>
    <p>Dans ce cours, nous allons commencer par expliquer ce qu’est Git. Pour cela, nous allons définir ce qu’est un système de gestion de version et comprendre en quoi Git est différent des autres systèmes de gestion de version et pourquoi il est si populaire.
 
     Nous allons ensuite découvrir les fonctionnalités principales de Git et apprendre à les utiliser. Nous apprendrons notamment à créer un nouveau dépôt Git avec la commande git init ou à cloner un dépôt existant avec git clone, à observer l’état d’un projet avec git status, à ajouter des fichiers à l’index avec git add, à valider des modifications avec git commit, etc.
@@ -16,5 +16,51 @@
     Finalement, nous découvrirons GitHub et apprendrons à gérer nos différents dépôts et à travailler sur des dépôts hébergés.
     
     </p>
+
+    <p>Qu’est-ce que Git ?
+        Git est un logiciel de versioning créé en 2005 par Linus Torvalds, le créateur de Linux.
+        
+        Un logiciel de versioning, ou logiciel de gestion de version est un logiciel qui permet de conserver un historique des modifications effectuées sur un projet afin de pouvoir rapidement identifier les changements effectuées et de revenir à une ancienne version en cas de problème.
+        
+        Les logiciels de gestion de versions sont quasiment incontournables aujourd’hui car ils facilitent grandement la gestion de projets et car ils permettent de travailler en équipe de manière beaucoup plus efficace.
+        
+        Parmi les logiciels de gestion de versions, Git est le leader incontesté et il est donc indispensable pour tout développeur de savoir utiliser Git.
+        
+         
+        
+        A quoi sert concrètement un système de gestion de version ?
+        Imaginez que vous possédiez un site web. A chaque fois que vous voulez modifier quelque chose sur le site ou tester une fonctionnalité, vous êtes obligé d’effectuer une sauvegarde du site avant l’implémentation afin de pouvoir le restaurer si quelque chose se passe mal.
+        
+        Jusqu’ici, le procédé est contraignant car vous allez devoir effectuer une sauvegarde complète et restaurer la sauvegarde en cas de problème mais cela ne semble pas très complexe ni insurmontable.
+        
+        Imaginez maintenant que vous soyez 10 à travailler sur le même site web, en vous occupant chacun de développer des fonctionnalités différentes mais qui peuvent être liées entre elles. L’organisation du travail est ici beaucoup plus complexe puisqu’il va falloir s’assurer :
+        
+        Que les fonctionnalités sur lesquelles travaillent un développeur ne rentrent pas en conflit avec les fonctionnalités sur lesquelles travaillent des autres développeurs ;
+        Que chaque développeur sache sur quoi travaillent les autres développeurs afin de travailler correctement ;
+        que chaque développeur possède une version actualisée du site pour tester et implémenter ses fonctionnalités.
+        Ici, l’idée la plus logique serait de mettre en place un serveur distant qui contiendrait l’historique des modifications faites par chaque développeur afin que chacun ait accès aux avancées des autres. Chaque développeur pourrait également copier l’intégralité du contenu du serveur pour travailler en local sur sa machine. On vient ainsi de créer un système de gestion de version décentralisé rudimentaire.
+        
+        Grosso-modo, les logiciels de versioning et Git en particulier vont nous permettre d’effectuer ces opérations mais de manière beaucoup plus robuste et avec de nombreuses fonctionnalités supplémentaires très utiles (possibilité de synchroniser son dossier local avec le serveur, connexion aux autres projets et mise à jour des différences automatisée, etc.
+        
+        Git permet de coordonner le travail entre plusieurs personnes en conservant un historique des changements effectués sur des fichiers.
+        
+        Git permet à différentes versions d’un même fichier de coexister. Les développeurs travaillant avec Git ont accès à l’historique des modifications pour l’intégralité du projet et peuvent ainsi savoir quels changements ont été fait par rapport à leur version des fichiers, qui a fait ces changements, etc.
+        
+         
+        
+        Les deux modèles des logiciels de gestion de version : modèle centralisé vs modèle décentralisé
+        Les logiciels de gestion de version sont aujourd’hui tous construits sur l’un des deux modèles suivants : le modèle centralisé ou le modèle décentralisé encore appelé modèle distribué.
+        
+        Le principe de base d’un modèle centralisé est la centralisation du code source lié au projet : la source du code du projet est hébergé sur un serveur distant central et les différents utilisateurs doivent se connecter à ce serveur pour travailler sur ce code.
+        
+        Dans un modèle distribué, le principe de base est opposé : le code source du projet est toujours hébergé sur un serveur distant mais chaque utilisateur est invité à télécharger et à héberger l’intégralité du code source du projet sur sa propre machine.
+        
+        Le modèle distribué a été popularisé par Git et présente différents avantages notables par rapport au modèle centralisé :
+        
+        Simplicité / flexibilité du travail : Comme chaque utilisateur peut héberger le code du projet, on n’a plus besoin d’être constamment connecté à un serveur central et on peut donc travailler en ligne sur sa propre machine ;
+        Sécurité : Comme chaque utilisateur possède le code complet d’un projet, on peut utiliser la copie du projet d’un utilisateur comme back-up en cas de corruption du serveur central.
+         
+        
+        </p>
 </body>
 </html>
